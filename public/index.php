@@ -61,8 +61,8 @@ $container['db'] = function ($container) {
 };
 
 // tasks
-$container['tasks'] = function () {
-    $tasks = new \Recruiting\Test\Task();
+$container['tasks'] = function ($container) {
+    $tasks = new \Recruiting\Test\Task($container['db']);
 
     return $tasks;
 };
