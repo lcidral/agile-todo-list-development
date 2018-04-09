@@ -107,7 +107,7 @@ Feature: Delete a task from my TO DO list
 |Method  |Resource  |JSON Post Body |Http Request Example  | Additional info
 |--|--|--|--|--|
 |DELETE  |/tasks/{UUID}           |type, content  |[delete_task.http](docs/http_requests/delete_task.http)                     | Update UUID param
-|DELETE  |/tasks/uuid-not-exists  |type, content  |[delete_task_not_exist.http](docs/http_requests/delete_task_not_exist.http) |
+|DELETE  |/tasks/uuid-not-exists  |type, content  |[delete_task_not_exists.http](docs/http_requests/delete_task_not_exists.http) |
 
 ## 4)  Edit the information of an existing task
 ### ACCEPTANCE CRITERIA
