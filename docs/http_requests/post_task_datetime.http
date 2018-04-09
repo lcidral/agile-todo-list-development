@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     "type" : "work",
-    "content" : "see created time with current datetime in column in task table",
+    "content" : "see created time in new todo list item",
 }
 
 ###

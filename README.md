@@ -51,7 +51,7 @@ Feature: Add a new item into my TO DO list
 
   Scenario: Set the date in which the item was created automatically
     Given I send a new valid post request task
-    Then I see DATETIME column with actual date time
+    Then I see created time in new todo list item
 
   Scenario: UUID must be automatically generated
     Given I send a new valid post request task
