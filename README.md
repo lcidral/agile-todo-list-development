@@ -217,10 +217,10 @@ Feature: Improve the quality of a legacy code by refactoring
  * File 6) [tests/CreditCardTest.php](tests/CreditCardTest.php)
 
 
-##### CONFIGURE TO RUN
+#### CONFIGURE TO RUN
 Configure Database Credentials in [public/index.php](public/index.php) and [phinx.yml](phinx.yml)
 
-###### index.php
+##### index.php
 ````php
 'db' => [
     'driver' => 'mysql',
@@ -233,7 +233,7 @@ Configure Database Credentials in [public/index.php](public/index.php) and [phin
     'prefix'    => '',
 ]
 ````
-###### phinx.yml
+##### phinx.yml
 ```yaml
 development:
     adapter: mysql
@@ -251,7 +251,7 @@ Install composer dependencies
 composer install
 ```
 
-##### DOCKER
+#### DOCKER
 To start the docker services, use the ``docker-compose up`` in ``docker`` branch
 or manually configure your web server and database instances.
 
