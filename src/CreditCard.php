@@ -46,13 +46,13 @@ class CreditCard
     function isValid($number = null)
     {
         if (is_null($number)) {
-            $this->error = CredCardErrors::INVALID_CHAR;
+            $this->error = CreditCardErrors::INVALID_CHAR;
         }
 
         $number = $this->getValue($number);
         $lencat = $this->getLengthCategory($number);
 
-        $this->error = CredCardErrors::INVALID_LENGTH;
+        $this->error = CreditCardErrors::INVALID_LENGTH;
 
         if ($this->checkLength($number, $lencat)) {
             $this->number = $number;
@@ -128,7 +128,7 @@ class CreditCard
             if (ctype_digit($character)) {
                 $return .= $character;
             } elseif (!ctype_space($character) && !ctype_punct($character)) {
-                $this->error = CredCardErrors::INVALID_CHAR;
+                $this->error = CreditCardErrors::INVALID_CHAR;
                 break;
             }
         }
