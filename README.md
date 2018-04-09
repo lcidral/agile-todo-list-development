@@ -247,6 +247,6 @@ development:
 
 ##### DOCKER
 To start the docker services, use the ``docker-compose up`` in ``docker`` branch
-or manually configure your web server and database.
+or manually configure your web server and database instances.
 
 * Required: **Docker installed** in host machine
