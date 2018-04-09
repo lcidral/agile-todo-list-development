@@ -5,4 +5,8 @@
 /vendor
 /nbproject/
 /.idea
+/.idea/httpRequests
 /bin
+
+/logs/*
+!/logs/README.md
