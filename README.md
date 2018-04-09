@@ -77,7 +77,7 @@ Feature: Add a new item into my TO DO list
 |POST  |/tasks/  |type, content  |[post_task_uuid.http](docs/http_requests/post_task_uuid.http)                          |
 |POST  |/tasks/  |type, content  |[post_shopping_type_task.http](docs/http_requests/post_shopping_type_task.http)        |
 |POST  |/tasks/  |type, content  |[post_work_type_task.http](docs/http_requests/post_work_type_task.http)                |
-|POST  |/tasks/  |type, content  |[post_work_unknow_type_task.http](docs/http_requests/post_work_unknow_type_task.http)  |
+|POST  |/tasks/  |type, content  |[post_unknow_type_task.http](docs/http_requests/post_unknow_type_task.http)  |
   
 ## 3) Delete an existing task
 #### ACCEPTANCE CRITERIA
