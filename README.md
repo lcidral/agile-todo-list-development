@@ -28,7 +28,7 @@ Feature: See the items of TO DO list
 |Method  |Resource  |JSON Post Body |Http Request Example  | Additional info
 |--|--|--|--|--|
 |GET  |/tasks/               |  |[get_tasks.http](docs/http_requests/get_tasks.http)                    |
-|GET  |/task/{UUID}          |  |[task_detail.http](docs/http_requests/task_detail.http)                | Update UUID param
+|GET  |/task/{UUID}          |  |[get_task_detail.http](docs/http_requests/get_task_detail.http)                | Update UUID param
 |GET  |/task/uuid-not-found  |  |[get_task_not_found.http](docs/http_requests/get_task_not_found.http)  | 
     
 ### 2) Add a new item into my TO DO list
