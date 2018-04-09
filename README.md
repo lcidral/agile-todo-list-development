@@ -27,9 +27,9 @@ Feature: See the items of TO DO list
 #### LIST OF REST RESOURCES
 |Method  |Resource  |JSON Post Body |Http Request Example  | Additional info
 |--|--|--|--|--|
-|GET  |/tasks/               |  |get_tasks.http(../blob/baster/docs/http_requests/get_tasks.http)                    |
-|GET  |/task/{UUID}          |  |task_detail.http(../blob/baster/docs/http_requests/task_detail.http)                | Update UUID param
-|GET  |/task/uuid-not-found  |  |get_task_not_found.http(../blob/baster/docs/http_requests/get_task_not_found.http)  | 
+|GET  |/tasks/               |  |get_tasks.http(docs/http_requests/get_tasks.http)                    |
+|GET  |/task/{UUID}          |  |task_detail.http(docs/http_requests/task_detail.http)                | Update UUID param
+|GET  |/task/uuid-not-found  |  |get_task_not_found.http(docs/http_requests/get_task_not_found.http)  | 
     
 ### 2) Add a new item into my TO DO list
 #### ACCEPTANCE CRITERIA
@@ -72,12 +72,12 @@ Feature: Add a new item into my TO DO list
 #### LIST OF REST RESOURCES
 |Method  |Resource  |JSON Post Body |Http Request Example  | Additional info
 |--|--|--|--|--|
-|POST  |/tasks/  |type           |post_empty_task.http(../blob/baster/docs/http_requests/post_empty_task.http)                        |
-|POST  |/tasks/  |type, content  |post_task_datetime.http(../blob/baster/docs/http_requests/post_task_datetime.http)                  |
-|POST  |/tasks/  |type, content  |post_task_uuid.http(../blob/baster/docs/http_requests/post_task_uuid.http)                          |
-|POST  |/tasks/  |type, content  |post_shopping_type_task.http(../blob/baster/docs/http_requests/post_shopping_type_task.http)        |
-|POST  |/tasks/  |type, content  |post_work_type_task.http(../blob/baster/docs/http_requests/post_work_type_task.http)                |
-|POST  |/tasks/  |type, content  |post_work_unknow_type_task.http(../blob/baster/docs/http_requests/post_work_unknow_type_task.http)  |
+|POST  |/tasks/  |type           |post_empty_task.http(docs/http_requests/post_empty_task.http)                        |
+|POST  |/tasks/  |type, content  |post_task_datetime.http(docs/http_requests/post_task_datetime.http)                  |
+|POST  |/tasks/  |type, content  |post_task_uuid.http(docs/http_requests/post_task_uuid.http)                          |
+|POST  |/tasks/  |type, content  |post_shopping_type_task.http(docs/http_requests/post_shopping_type_task.http)        |
+|POST  |/tasks/  |type, content  |post_work_type_task.http(docs/http_requests/post_work_type_task.http)                |
+|POST  |/tasks/  |type, content  |post_work_unknow_type_task.http(docs/http_requests/post_work_unknow_type_task.http)  |
   
 ## 3) Delete an existing task
 #### ACCEPTANCE CRITERIA
@@ -106,8 +106,8 @@ Feature: Delete a task from my TO DO list
 #### LIST OF REST RESOURCES
 |Method  |Resource  |JSON Post Body |Http Request Example  | Additional info
 |--|--|--|--|--|
-|DELETE  |/tasks/{UUID}           |type, content  |delete_task.http(../blob/baster/docs/http_requests/delete_task.http)                     | Update UUID param
-|DELETE  |/tasks/uuid-not-exists  |type, content  |delete_task_not_exist.http(../blob/baster/docs/http_requests/delete_task_not_exist.http) |
+|DELETE  |/tasks/{UUID}           |type, content  |delete_task.http(docs/http_requests/delete_task.http)                     | Update UUID param
+|DELETE  |/tasks/uuid-not-exists  |type, content  |delete_task_not_exist.http(docs/http_requests/delete_task_not_exist.http) |
 
 ## 4)  Edit the information of an existing task
 ### ACCEPTANCE CRITERIA
@@ -132,8 +132,8 @@ Feature: Edit the information of an existing task
 #### LIST OF REST RESOURCES
 |Method  |Resource  |JSON Post Body |Http Request Example  | Additional info
 |-|--|--|--|--|
-|PUT  |/tasks/{UUID}           |type, content  |put_task.http(../blob/baster/docs/http_requests/put_task.http)                      | Update UUID
-|PUT  |/tasks/uuid-not-exists  |type, content  |put_task_not_exist.http(../blob/baster/docs/http_requests/put_task_not_exist.http)  | 
+|PUT  |/tasks/{UUID}           |type, content  |put_task.http(docs/http_requests/put_task.http)                      | Update UUID
+|PUT  |/tasks/uuid-not-exists  |type, content  |put_task_not_exist.http(docs/http_requests/put_task_not_exist.http)  | 
 
 ## 5) Prioritize the tasks of my TO DO list  
 ### ACCEPTANCE CRITERIA
@@ -163,7 +163,7 @@ Feature: Prioritize the tasks of my TO DO list
 ```
 |Method  |Resource  |Post Body |Http Request Example  | Additional info
 |--|--|--|--|--|
-|PATCH  |/tasks/reorder/{UUID}  |sort_order  |patch_reorder_task.http(../blob/baster/docs/http_requests/patch_reorder_task.http)  | Update UUID param
+|PATCH  |/tasks/reorder/{UUID}  |sort_order  |patch_reorder_task.http(docs/http_requests/patch_reorder_task.http)  | Update UUID param
   
 #### EXTRA INFORMATION  
 ##### Entity
