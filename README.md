@@ -214,5 +214,5 @@ Feature: Improve the quality of a legacy code by refactoring
  * File 3) [src/Task.php](src/Task.php)
  * File 4) [src/CreditCard.php](src/CreditCard.php)
  * File 5) [src/CreditCardErrors.php](src/CreditCardErrors.php) 
- * File 6) [src/CreditCardTest.php](src/CreditCardTest.php)
+ * File 6) [tests/CreditCardTest.php](tests/CreditCardTest.php)
 > **Note:** Run PHPUnit tests
