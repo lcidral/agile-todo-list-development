@@ -208,11 +208,45 @@ Feature: Improve the quality of a legacy code by refactoring
     Given I have the code in reposity
     Then I see PSR-4 standards applied in the code
 ```
-#### EXTRA INFORMATION  
+#### EXTRA INFORMATION
  * File 1) [composer.json](composer.json)
  * File 2) [src/routes.php](src/routes.php)
  * File 3) [src/Task.php](src/Task.php)
  * File 4) [src/CreditCard.php](src/CreditCard.php)
  * File 5) [src/CreditCardErrors.php](src/CreditCardErrors.php) 
  * File 6) [tests/CreditCardTest.php](tests/CreditCardTest.php)
-> **Note:** Run PHPUnit tests
+
+
+##### CONFIGURE TO RUN
+Configure Database Credentials in [public/index.php](public/index.php) and [phinx.yml](phinx.yml)
+
+###### index.php
+````php
+'db' => [
+    'driver' => 'mysql',
+    'host' => 'db_hostname',
+    'database' => 'recruiting_test',
+    'username' => 'root',
+    'password' => 'admin',
+    'charset'   => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+]
+````
+###### phinx.yml
+```yaml
+development:
+    adapter: mysql
+    host: db_hostname
+    name: recruiting_test
+    user: root
+    pass: 'admin'
+    port: 3306
+    charset: utf8
+```
+
+##### DOCKER
+To start the docker services, use the ``docker-compose up`` in ``docker`` branch
+or manually configure your web server and database.
+
+* Required: **Docker installed** in host machine
