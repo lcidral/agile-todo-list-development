@@ -1,0 +1,4 @@
+GET http://{{host}}/task/4541e11e-3b77-11e8-9222-0242ac1b0004
+Content-Type: ype: application/json
+
+###

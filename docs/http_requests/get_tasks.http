@@ -1,0 +1,4 @@
+GET http://{{host}}/tasks/
+Content-Type: application/json
+
+###

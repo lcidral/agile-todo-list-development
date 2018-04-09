@@ -1,0 +1,9 @@
+POST http://{{host}}/tasks/
+Content-Type: application/json
+
+{
+    "type" : "shopping",
+    "content" : "buy a bag"
+}
+
+###

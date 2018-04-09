@@ -1,0 +1,9 @@
+POST http://{{host}}/tasks/
+Content-Type: application/json
+
+{
+    "type" : "work",
+    "content" : "see created time with current datetime in column in task table",
+}
+
+###

@@ -1,0 +1,4 @@
+GET http://{{host}}/task/uuid-not-found
+Content-Type: application/json
+
+###

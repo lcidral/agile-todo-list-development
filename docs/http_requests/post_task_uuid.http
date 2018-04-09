@@ -1,0 +1,9 @@
+POST http://{{host}}/tasks/
+Content-Type: application/json
+
+{
+    "type" : "work",
+    "content" : "see uuid column in task table"
+}
+
+###

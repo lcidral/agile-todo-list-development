@@ -1,0 +1,6 @@
+PUT http://{{host}}/task/uuid-task-not-exist
+Content-type: application/x-www-form-urlencoded
+
+type=shopping&content=11111&done=1&_METHOD=PUT
+
+###
