@@ -1,6 +1,6 @@
 <?php
 
-class CreditCardTest extends PHPUnit_Framework_TestCase {
+class CreditCardTest extends PHPUnit\Framework\TestCase {
 
 	function testValidNumber() {
 		$credit_card = new \Recruiting\Test\CreditCard();
