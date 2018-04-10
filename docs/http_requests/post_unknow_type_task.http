@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     "type" : "backyard",
-    "content" : "sandbox",
+    "content" : "sandbox"
 }
 
 ###
