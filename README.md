@@ -250,6 +250,11 @@ Install composer dependencies
 composer install
 ```
 
+### MIGRATION
+````bash
+bin/phinx migrate -e development
+````
+
 ### DOCKER
 To start the docker services, use the ``docker-compose up`` in ``docker`` branch
 or manually configure your web server and database instances.
